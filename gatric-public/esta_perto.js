@@ -2,15 +2,15 @@
 "ABETARDA",
 "ABUTRE",
 "ADAX",
-"AGULH√O VELA",
+"AGULH√ÉO VELA",
 "AIE-AIE",
 "ALBATROZ",
 "ALCATEIA",
 "ALCE",
 "AMEIVA",
-"ANTÕLOPE",
+"ANT√çLOPE",
 "ANU",
-"AN MONA",
+"AN√äMONA",
 "ARAPONGA",
 "ARATU",
 "ARENQUE",
@@ -18,14 +18,14 @@
 "ARRAIA",
 "ASA",
 "ASNO",
-"ATOB¡",
+"ATOB√Å",
 "ATUM",
 "AUROQUE",
-"AVE-DO-PARAÕSO",
+"AVE-DO-PARA√çSO",
 "AVESTRUZ",
 "AXOLOTE",
-"A«OR",
-"BABUÕNO",
+"A√áOR",
+"BABU√çNO",
 "BADEJO",
 "BAGRE",
 "BAIACU",
@@ -35,13 +35,13 @@
 "BEM-TE-VI",
 "BETTA",
 "BEZERRO",
-"BIS√O",
+"BIS√ÉO",
 "BODE",
 "BOI",
 "BORBOLETA",
 "BOTO",
 "BUGIO-PRETO",
-"B⁄FALO",
+"B√öFALO",
 "CABRA",
 "CABRITO",
 "CACATUA",
@@ -50,12 +50,12 @@
 "CAITITU",
 "CALAU",
 "CALOPSITA",
-"CAMALE√O",
-"CAMAR√O",
+"CAMALE√ÉO",
+"CAMAR√ÉO",
 "CAMELO",
 "CAMUNDONGO",
 "CANGURU",
-"CAN¡RIO",
+"CAN√ÅRIO",
 "CAPIVARA",
 
 "CARDEAL",
@@ -63,20 +63,20 @@
 "CARNEIRO",
 "CARPA",
 
-"CARRI«A",
+"CARRI√áA",
 "CASCAVEL",
 "CASTOR",
 "CASUAR",
 "CAVALO",
 
-"CA«√O",
+"CA√á√ÉO",
 "CEGONHA",
 "CENTOPEIA",
 "CERVO",
 "CHACAL",
 "CHAMARIZ",
 "CHIFRE",
-"CHIMPANZ…",
+"CHIMPANZ√â",
 "CHINCHILA",
 "CHUPIM",
 "CISNE",
@@ -97,17 +97,17 @@
 "CROCODILO",
 "CUCO",
 "CUPIM",
-"CURIMAT√",
-"CURI”",
+"CURIMAT√É",
+"CURI√ì",
 "CUTIA",
-"DIABO-DA-TASM¬NIA",
+"DIABO-DA-TASM√ÇNIA",
 "DINGO",
-"DOD‘",
+"DOD√î",
 
 "DOURADO",
-"DRAG√O DO MAR",
-"DRAG√O-DE-KOMODO",
-"DROMED¡RIO",
+"DRAG√ÉO DO MAR",
+"DRAG√ÉO-DE-KOMODO",
+"DROMED√ÅRIO",
 "ELEFANTE",
 "EMA",
 "EMU",
@@ -118,63 +118,63 @@
 
 
 
-"FAIS√O",
-"FALC√O",
+"FAIS√ÉO",
+"FALC√ÉO",
 "FENECO",
-"FERR√O",
+"FERR√ÉO",
 "FLAMINGO",
 "FORMIGA",
-"FORMIGA-LE√O",
+"FORMIGA-LE√ÉO",
 "FORMIGA-VERDE",
 "FRAGATA",
 
-"FUR√O",
+"FUR√ÉO",
 "GAFANHOTO",
 "GAIVOTA",
 
 "GALO",
-"GAMB¡",
+"GAMB√Å",
 "GANSO",
 "GAROUPA",
 "GARRA",
-"GAR«A",
+"GAR√áA",
 "GATO-DO-MATO",
 "GAVIAL",
-"GAVI√O",
+"GAVI√ÉO",
 "GAZELA",
 "GAZELA-GIRAFA",
-"GIB√O",
+"GIB√ÉO",
 "GINETA",
 "GIRAFA",
 "GIRINO",
-"GLUT√O",
+"GLUT√ÉO",
 "GNU",
 "GORILA",
 "GRALHA-AZUL",
 "GRILO",
 "GUANACO",
-"GUAR¡",
+"GUAR√Å",
 "GUAXINIM",
 "GUELRAS",
 "GUEPARDO",
 "HAMSTER",
 "HIENA",
-"HIPOP”TAMO",
+"HIPOP√ìTAMO",
 "IAQUE",
 "IGUANA",
 "IMPALA",
 "IRARA",
 "JABUTI",
-"JACAR…",
+"JACAR√â",
 "JACU",
 "JACUTINGA",
 "JAGUATIRICA",
 "JAMANTA",
 "JAVALI",
-"JA«AN√",
+"JA√áAN√É",
 "JERBOA",
 "JIBOIA",
-"JO√O-DE-BARRO",
+"JO√ÉO-DE-BARRO",
 "JUMENTO",
 "KUDU",
 "LACRAIA",
@@ -185,14 +185,14 @@
 "LAMBARI",
 "LARVA",
 "LEBRE",
-"LEIT√O",
+"LEIT√ÉO",
 "LEOA",
 "LEOPARDO",
 "LEOPARDO-DAS-NEVES",
 "LESMA",
-"LE√O",
+"LE√ÉO",
 "LHAMA",
-"LIB…LULA",
+"LIB√âLULA",
 "LINCE",
 "LINGUADO",
 
@@ -200,7 +200,7 @@
 "LONTRA",
 "LOUVA-A-DEUS",
 "LULA",
-"L MURE",
+"L√äMURE",
 "MABECO",
 "MAMBA",
 "MAMUTE",
@@ -214,9 +214,9 @@
 "MARMOTA",
 "MARRECO",
 "MATA-MATA",
-"MEXILH√O",
-"MICO-LE√O-DOURADO",
-"MICO-LE√O-PRETO",
+"MEXILH√ÉO",
+"MICO-LE√ÉO-DOURADO",
+"MICO-LE√ÉO-PRETO",
 "MOLUSCO",
 "MORCEGO",
 "MOREIA",
@@ -226,7 +226,7 @@
 "NAJA",
 "NARCEJA",
 "NARVAL",
-"N¡UTILO",
+"N√ÅUTILO",
 "OCAPI",
 
 
@@ -236,7 +236,7 @@
 "ORNITORRINCO",
 "OSTRA JAPONESA",
 "OSTRA",
-"OURI«O",
+"OURI√áO",
 "VACA",
 "VAGA-LUME",
 "OVELHA",
@@ -248,7 +248,7 @@
 "PAPAGAIO",
 
 "PARDAL",
-"PAV√O",
+"PAV√ÉO",
 "PELICANO",
 
 
@@ -266,7 +266,7 @@
 "PIXARRO",
 "POLVO",
 "POMBO",
-"PORAQU ",
+"PORAQU√ä",
 "PORCO",
 "PORCO-DA-TERRA",
 
@@ -274,9 +274,9 @@
 "POTRO",
 "PULGA",
 "PUMA",
-"P¡SSARO-LIRA",
-"PÕTON",
-"P‘NEI",
+"P√ÅSSARO-LIRA",
+"P√çTON",
+"P√îNEI",
 "QUATI",
 "QUEIXADA",
 "QUERO-QUERO",
@@ -292,12 +292,12 @@
 "RENA",
 "RINOCERONTE",
 "ROBALO",
-"R√",
+"R√É",
 "SAGUI",
 "SAICANGA",
 "SAIGA",
 "SALAMANDRA",
-"SALM√O",
+"SALM√ÉO",
 "SANGUESSUGA",
 "SAPO",
 "SAPO-BOI",
@@ -310,32 +310,32 @@
 "SUCURI",
 "SURICATO",
 "SURUCUCU",
-"TAMANDUAÕ",
-"TAMANDU¡",
+"TAMANDUA√ç",
+"TAMANDU√Å",
 "TAMBAQUI",
 "TANAJURA",
-"TANGAR¡",
+"TANGAR√Å",
 "TARTARUGA",
-"TAR¬NTULA",
+"TAR√ÇNTULA",
 "TATU",
 "TATURANA",
-"TEI⁄",
-"TENT¡CULOS",
+"TEI√ö",
+"TENT√ÅCULOS",
 "TEXUGO",
 "TICO-TICO",
 "TIGRE BRANCO",
 "TIGRE DE BENGALA",
 "TIGRE",
-"TIL¡PIA",
+"TIL√ÅPIA",
 "TOUPEIRA",
 "TOURO",
-"TRA«A",
-"TRAÕRA",
+"TRA√áA",
+"TRA√çRA",
 "TROMBA",
 "TRUTA",
 "TUCANO",
-"TUCUNAR…",
-"TUIUI⁄",
+"TUCUNAR√â",
+"TUIUI√ö",
 "URSO",
 "URSO-PARDO",
 "URSO-POLAR",
@@ -343,23 +343,23 @@
 "URUBU-REI",
 "URUMUTUM",
 "URUTU",
-"U«¡",
+"U√á√Å",
 "VESPA",
 
 "VICUNHA",
-"VI⁄VA-NEGRA",
+"VI√öVA-NEGRA",
 "VOMBATE",
 "WALLABY",
-"XEX…U",
-"ZANG√O",
+"XEX√âU",
+"ZANG√ÉO",
 "ZEBRA",
 "ZEBU",
 "ZORRILHO",
-"¡CARO",
+"√ÅCARO",
 
-"…GUA",
-"ÕBIS",
-"”RIX",
+"√âGUA",
+"√çBIS",
+"√ìRIX",
 
 
 var peixe = [
@@ -376,11 +376,11 @@ var peixe = [
 "PEIXE-GALO",
 "PEIXE-GATO",
 "PEIXE-LANTERNA",
-"PEIXE-LE√O",
+"PEIXE-LE√ÉO",
 "PEIXE-LUA",
 "PEIXE-MANDARIM",
 "PEIXE-MORCEGO",
-"PEIXE-PALHA«O",
+"PEIXE-PALHA√áO",
 "PEIXE-PEDRA",
 "PEIXE-REI",
 "PEIXE-SERRA",
@@ -396,7 +396,7 @@ var aran = [
 "ARANHA-CARANGUEJEIRA",
 "ARANHA-DO-MAR",
 "ARANHA-MARROM",
-"ARANHA-PAV√O",
+"ARANHA-PAV√ÉO",
 "MUSARANHO",
 "MACACO-ARANHA"
 ]
@@ -428,17 +428,17 @@ var lagarta = [
 "LAGARTIXA"
 ]
 
-var camar„o = [
-"CAMAR√O",
-"CAN¡RIO",
-"CAMALE√O"
+var camar√£o = [
+"CAMAR√ÉO",
+"CAN√ÅRIO",
+"CAMALE√ÉO"
 ]
 //CHAMARIZ
 
 var azul = [
 "BALEIA-AZUL",
 "MARLIN-AZUL",
-"AZUL√O",
+"AZUL√ÉO",
 "GRALHA-AZUL"
 ]
 
@@ -447,7 +447,7 @@ var bicho = [
 "BICHO-DA-SEDA",
 "BICHO-FOLHA",
 "BICHO-PAU",
-"BICHO-PREGUI«A",
+"BICHO-PREGUI√áA",
 "BICO"
 ]
 
@@ -460,8 +460,8 @@ var inho = [
 "LOBO-MARINHO",
 "MINHOCA",
 "PORCO-ESPINHO",
-"PORQUINHO-DA-ÕNDIA",
-"LE√O-MARINHO"
+"PORQUINHO-DA-√çNDIA",
+"LE√ÉO-MARINHO"
 ]
 
 var pato = [
@@ -486,8 +486,8 @@ var inha = [
 
 // gara/garra
 var gara = [
-"GAR«A",
-"GUAR¡",
+"GAR√áA",
+"GUAR√Å",
 "GARRA",
 "CIGARRA"
 ]
@@ -501,18 +501,18 @@ var paca = [
 
 var arara = [
 "JARARACA",
-"JARARACU«U",
+"JARARACU√áU",
 "ARARA",
 "ARARA-VERMELHA",
 "ARARAJUBA"
 ]
 
-var le„o = [
-"MICO-LE√O-PRETO",
-"MICO-LE√O-DOURADO",
-"LE√O",
-"FORMIGA-LE√O",
-"CAMALE√O"
+var le√£o = [
+"MICO-LE√ÉO-PRETO",
+"MICO-LE√ÉO-DOURADO",
+"LE√ÉO",
+"FORMIGA-LE√ÉO",
+"CAMALE√ÉO"
 ]
 
 var ouro = [
@@ -536,7 +536,7 @@ var domar = [
 "ESPONJA-DO-MAR",
 "PEPINO-DO-MAR",
 "PAPAGAIO-DO-MAR",
-"OURI«O-DO-MAR",
+"OURI√áO-DO-MAR",
 "ESTRELA-DO-MAR"
 ]
 
@@ -559,20 +559,20 @@ var pard = [
 "PARDAL"
 ]
 
-var tubar„o = [
-"TUBAR√O",
-"TUBAR√O-BALEIA",
-"TUBAR√O-BRANCO",
-"TUBAR√O-DUENDE",
-"TUBAR√O-ENFERMEIRO",
-"TUBAR√O-LIXA",
-"TUBAR√O-MARTELO"
+var tubar√£o = [
+"TUBAR√ÉO",
+"TUBAR√ÉO-BALEIA",
+"TUBAR√ÉO-BRANCO",
+"TUBAR√ÉO-DUENDE",
+"TUBAR√ÉO-ENFERMEIRO",
+"TUBAR√ÉO-LIXA",
+"TUBAR√ÉO-MARTELO"
 ]
 
-var cobr = [
+var cobra = [
 "COBRA",
 "COBRA-CEGA",
-"COBRA-CIP”",
+"COBRA-CIP√ì",
 "COBRA-CORAL",
 "CABRA",
 "PIOLHO-DE-COBRA"
@@ -581,12 +581,12 @@ var cobr = [
 
 var orca = [
 "ORCA",
-"ON«A"
+"ON√áA"
 ]
 
-var is„o = [
-"FAIS√O",
-"BIS√O"
+var is√£o = [
+"FAIS√ÉO",
+"BIS√ÉO"
 ]
 
 var squi = [
@@ -629,14 +629,14 @@ var barbata = [
 "BARBATANA"
 ]
 
-var escorpi„o = [
-"ESCORPI√O",
-"ESCORPI√O-VINAGRE"
+var escorpi√£o = [
+"ESCORPI√ÉO",
+"ESCORPI√ÉO-VINAGRE"
 ]
 
 var - = [
-"¡GUA-VIVA",
-"¡GUIA",
+"√ÅGUA-VIVA",
+"√ÅGUIA",
 "ENGUIA"
 ]
 
@@ -652,7 +652,7 @@ var cuco = [
 
 var mata = [
 "MATA-MATA",
-"CURIMAT√"
+"CURIMAT√É"
 ]
 
 var saica = [
@@ -664,7 +664,7 @@ var ango = [
 "ORANGOTANGO",
 "PANGOLIM",
 "CALANGO",
-"COELHO ANGOR¡"
+"COELHO ANGOR√Å"
 ]
 
 var cupim = [
@@ -673,9 +673,9 @@ var cupim = [
 ]
 
 var lobo = [
-"LOBO DA TASM¬NIA",
+"LOBO DA TASM√ÇNIA",
 "LOBO",
-"LOBO-GUAR¡"
+"LOBO-GUAR√Å"
 ]
 
 var mosa = [
