@@ -3,7 +3,7 @@ Simples script de dicas para gkkkk, entre outras tools.
 
 ## Usagem
 
-Aperte Ctrl+Shift+i, em seguida, cole o código abaixo no console e dê enter.
+Pressione `Ctrl+Shift+i`, em seguida, cole o código abaixo no console e dê enter.
 
 ```js
 var script = document.createElement('script');
