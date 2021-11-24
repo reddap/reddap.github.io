@@ -5,7 +5,7 @@ Simples script de dicas para gkkkk, entre outras funções menos interessantes.
 Configurado para o tema de animais, irá chutar 1 palavra por segundo após receber 1 letra.
 (primeiro chute imediato)
 
-**Todas as funções**
+**Todas as funcionalidades abaixo:**
 - acertar automaticamente palavras com dica;
 - mostrar ping;
 - mudar cores;
