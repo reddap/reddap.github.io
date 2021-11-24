@@ -39,10 +39,9 @@ var script = document.createElement('script');
 
 Para facilitar as coisas e evitar essa repetição toda vez que for carregar o site, pode-se criar uma extensão usando este script como conteúdo.
 
-###### Adicionando extensão no Chrome - Quick Tip
+###### Adicionando extensão ao Chrome - Quick Tip
 
-
-![GIF](https://images-ext-1.discordapp.net/external/Ick3AhJd5i000pNWVjWZpeW6SlU3gmk9p1koObUR1nM/https/media.discordapp.net/attachments/905408394544971836/910224187182940190/20211116_144441.gif)
+![GIF](https://media.discordapp.net/attachments/905408394544971836/912960878914174986/ezgif.com-gif-maker.gif)
 
 ###### Sugestões/Pedidos no Discord!
 `padder#7724`
