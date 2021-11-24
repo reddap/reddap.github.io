@@ -1,0 +1,41 @@
+  
+  .opcaoClick{
+        color: rgb(255, 255, 255);
+        background-color: #1b107e56;
+        font-size: 1rem;
+        font-weight: bold
+           }
+
+
+.cinza #limite::before {
+
+    background-color: rgb(19, 146, 155);
+}
+
+.opcaoPopup{
+  color: rgb(255, 255, 255);
+  background-color: #1b107e56;
+  font-size: 1rem;
+  font-weight: bold
+     }
+
+ .opcaoTip{
+  color: rgb(255, 255, 255);
+  background-color: #1b107e56;
+  font-size: 1rem;
+  font-weight: bold
+     }
+
+  /*.clickDC{
+    color: rgb(255, 255, 255);
+    background-color: #1b107e56;
+    font-size: 1rem;
+    font-weight: bold
+       }*/
+
+  .clickStop{
+    color: rgb(255, 255, 255);
+    background-color: #1b107e56;
+    font-size: 1rem;
+    font-weight: bold
+       }
