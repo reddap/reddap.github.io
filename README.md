@@ -39,7 +39,7 @@ var script = document.createElement('script');
 
 Para facilitar as coisas e evitar essa repetição toda vez que for carregar o site, pode-se criar uma extensão usando este script como conteúdo.
 
-###### Adicionando extensão ao Chrome - Quick Tip
+###### Adicionando extensão ao Chrome - Quick Tutorial
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/70059776/143190589-660aa681-49bf-4455-9e6e-cca765f150c2.gif)
 
