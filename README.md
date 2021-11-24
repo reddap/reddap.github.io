@@ -2,15 +2,15 @@
 
 Simples script de dicas para gkkkk, entre outras funções menos interessantes.
 
-- mostrar ping
-- mudar cores
-- quick tip/report
-- mostrar se a sala recebeu denúncia
-
-
 Configurado para o tema de animais, irá chutar 1 palavra por segundo após receber 1 letra.
 (primeiro chute imediato)
 
+**Todas as funções**
+- acertar automaticamente palavras com dica;
+- mostrar ping;
+- mudar cores;
+- quick tip/report;
+- mostrar se a sala recebeu denúncia.
 
 ## Usagem
 
