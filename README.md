@@ -25,15 +25,15 @@ var script = document.createElement('script');
     document.body.appendChild(script);
 ```
 
-**Ativar/Desativar**
+###### Ativar/Desativar
 
 ![GIF](https://media.discordapp.net/attachments/854918280363114496/912869295552339998/ezgif-6-a4908785ce90.gif)
 
-**Demonstração**
+###### Demonstração
 
 ![GIF](https://media.discordapp.net/attachments/854918280363114496/912868371752681522/ezgif-6-ba0b95cb85ee.gif)
 
 
 ## Extensão
 
-Para facilitar as coisas e evitar essa repetição, pode-se criar uma extensão usando este script como conteúdo.
+Para facilitar as coisas e evitar essa repetição toda vez que for carregar o site, pode-se criar uma extensão usando este script como conteúdo.
