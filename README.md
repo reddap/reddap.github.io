@@ -5,7 +5,7 @@
 Simples script de dicas para gkkkk, entre outras funções menos interessantes.
 
 Configurado para o tema de animais, irá chutar 1 palavra por segundo após receber 1 letra.
-(primeiro chute imediato)
+(o primeiro chute é imediato)
 
 ###### Todas as funcionalidades:
 - acertar automaticamente palavras com dica;
@@ -13,7 +13,7 @@ Configurado para o tema de animais, irá chutar 1 palavra por segundo após rece
 - mostrar ping;
 - mudar cores;
 - quick tip/report;
-- mostrar se a sala recebeu denúncia.
+- mostrar salas denunciadas.
 
 ## Usagem
 
@@ -38,6 +38,11 @@ var script = document.createElement('script');
 ## Extensão
 
 Para facilitar as coisas e evitar essa repetição toda vez que for carregar o site, pode-se criar uma extensão usando este script como conteúdo.
+
+###### Adicionando extensão no Chrome - Quick Tip
+
+
+![GIF](https://images-ext-1.discordapp.net/external/Ick3AhJd5i000pNWVjWZpeW6SlU3gmk9p1koObUR1nM/https/media.discordapp.net/attachments/905408394544971836/910224187182940190/20211116_144441.gif)
 
 ###### Sugestões/Pedidos no Discord!
 `padder#7724`
