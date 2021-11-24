@@ -38,3 +38,8 @@ var script = document.createElement('script');
 ## Extensão
 
 Para facilitar as coisas e evitar essa repetição toda vez que for carregar o site, pode-se criar uma extensão usando este script como conteúdo.
+
+###### Sugestões/Pedidos no Discord!
+            `padder#7724` 
+
+
