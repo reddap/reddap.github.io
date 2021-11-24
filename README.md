@@ -1,4 +1,6 @@
-## Gatric Description
+# Gatric
+
+## Description
 
 Simples script de dicas para gkkkk, entre outras funções menos interessantes.
 
