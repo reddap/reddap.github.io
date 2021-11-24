@@ -9,6 +9,7 @@ Configurado para o tema de animais, irá chutar 1 palavra por segundo após rece
 
 ###### Todas as funcionalidades:
 - acertar automaticamente palavras com dica;
+- não desconectar-se da sala;
 - mostrar ping;
 - mudar cores;
 - quick tip/report;
