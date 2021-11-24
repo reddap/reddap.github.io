@@ -8,7 +8,7 @@ Simples script de dicas para gkkkk, entre outras funções menos interessantes.
 - mostrar se a sala recebeu denúncia
 
 
-Configurado para o tema de animais, irá chutar 1 animal por segundo após receber 1 letra.
+Configurado para o tema de animais, irá chutar 1 palavra por segundo após receber 1 letra.
 (primeiro chute imediato)
 
 
