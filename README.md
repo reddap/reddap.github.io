@@ -41,7 +41,8 @@ Para facilitar as coisas e evitar essa repetição toda vez que for carregar o s
 
 ###### Adicionando extensão ao Chrome - Quick Tip
 
-![GIF](https://media.discordapp.net/attachments/905408394544971836/912960878914174986/ezgif.com-gif-maker.gif)
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/70059776/143190589-660aa681-49bf-4455-9e6e-cca765f150c2.gif)
+
 
 ###### Sugestões/Pedidos no Discord!
 `padder#7724`
