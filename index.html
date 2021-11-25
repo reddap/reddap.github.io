@@ -1,25 +1,9 @@
 <!DOCTYPE html>
 <html>
    <body>
-	<h2 id="CounterVisitor"></h2>
-	   <script>
-//https://stackoverflow.com/questions/47428504/javascript-count-number-of-visitor-for-website
-		   
-var n = localStorage.getItem('on_load_counter');
+	   
 
-if (n === null) {
-  n = 0;
-}
-n++;
-
-localStorage.setItem("on_load_counter", n);
-
-nums = n.toString().split('').map(Number);
-document.getElementById('CounterVisitor').innerHTML = '';
-for (var i of nums) {
-  document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">' + i + '</span>';
-}
-
+	   
 </script>
 	   
 <h1>Primeiro teste de HTML e CSS sem manipulação de JavaScript (ou quase). :)<h1>
@@ -29,7 +13,7 @@ for (var i of nums) {
       <script>
          
 document.body.style.backgroundImage="url(https://thumbs.gfycat.com/BreakableWhoppingBluewhale-max-1mb.gif)"
-document.querySelectorAll('h2')[0].style.backgroundColor"#ffffff"
+
 document.body.style.backgroundColor="#0e0429"	     
          // city = 1
 	 // sem var 😂
@@ -48,7 +32,20 @@ document.querySelectorAll('img')[0].style.filter="drop-shadow(5px 5px 5px #190b4
 document.querySelectorAll('img')[1].style.filter="drop-shadow(5px 5px 5px #ffffff)"
 document.querySelectorAll('body')[0].style.userSelect="none"
          
-         
+        incrementAndShowValue();
+
+function incrementAndShowValue() {
+  var value = getCookie("visitcounter") || 0;
+  var newValue = ("00000" + (Number(value) + 1)).slice(-6);
+  var container = document.getElementById("counterVisitor");
+  String(newValue).split("").forEach(function(item, index) {
+    container.children[index].innerHTML = item;
+  });
+  counter++;
+  setCookie("visitcounter", counter);
+} 
+	   //https://stackoverflow.com/questions/47428504/javascript-count-number-of-visitor-for-website   
+	      
       </script>
 
 
