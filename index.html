@@ -2,9 +2,6 @@
 <html>
    <body>
 	   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" type="text/javascript"></script>
-	   
-
-
 
   <div class="rain front-row"></div>
   <div class="rain back-row"></div>
@@ -107,7 +104,7 @@ makeItRain();
 </script>
 	   
 <h1>Primeiro teste de HTML e CSS sem manipulação de JavaScript (ou quase). :)</h1>
-	  <h2>reddaP</h2>
+	   <div class="mid">😂</div>
       <img src="https://i.imgur.com/M9JvL7y.gif" ="240" class="gato"></img>
       <img src="https://i.imgur.com/dUNIkly.png"  height="240" class="cidade"></img>
       <script>
@@ -139,7 +136,7 @@ document.querySelectorAll('h2')[0].style.filter="drop-shadow(10px 10px 10px #190
 document.querySelectorAll('h2')[0].style.fontFamily="monospace"
 document.querySelectorAll('h2')[0].style.textAlign="center"
 document.querySelectorAll('h2')[0].style.verticalAlign="middle"
-document.querySelectorAll('h2')[0].style.display="table-cell"
+
       
 //https://stackoverflow.com/questions/19424317/move-the-background-image-on-mouse-over-single-parallax
 
@@ -184,7 +181,13 @@ $('body').mousemove(function(e){
 	animation: float 2s ease-in-out infinite;
 }
 
-      
+.mid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
    
    </style>
 	
