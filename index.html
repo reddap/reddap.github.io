@@ -39,12 +39,13 @@ var script = document.createElement('script');
     document.body.appendChild(script);
 	      
 //https://stackoverflow.com/questions/19424317/move-the-background-image-on-mouse-over-single-parallax
+	      setTimeout(()=>{
 $('body').mousemove(function(e){
     var amountMovedX = (e.pageX * -1 / 6);
     var amountMovedY = (e.pageY * -1 / 6);
     $(this).css('background-position', amountMovedX + 'px ' + amountMovedY + 'px');
 });      
-	      
+	      },3000)
 	      
       </script>
 	
