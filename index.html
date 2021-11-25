@@ -5,22 +5,8 @@
 
   <div class="rain front-row"></div>
   <div class="rain back-row"></div>
-  <div class="toggles">
-    <div class="splat-toggle toggle active">SPLAT</div>
-    <div class="back-row-toggle toggle active">BACK<br>ROW</div>
-    <div class="single-toggle toggle">SINGLE</div>
   </div>
 	   <style>
-html {
-  height: 100%;
-}
-
-body {
-  height: 100%;
-  margin: 0;
-  overflow: hidden;
-  background: linear-gradient(to bottom, #202020, #111119);
-}
 
 .rain {
   position: absolute;
@@ -37,7 +23,7 @@ body {
   opacity: 0.5;
 }
 
-body.back-row-toggle .rain.back-row {
+body.rain.back-row {
   display: block;
 }
 
@@ -85,98 +71,6 @@ body.back-row-toggle .rain.back-row {
   }
 }
 
-.splat {
-  width: 15px;
-  height: 10px;
-  border-top: 2px dotted rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  opacity: 1;
-  transform: scale(0);
-  animation: splat 0.5s linear infinite;
-  display: none;
-}
-
-body.splat-toggle .splat {
-  display: block;
-}
-
-@keyframes splat {
-  0% {
-    opacity: 1;
-    transform: scale(0);
-  }
-  80% {
-    opacity: 1;
-    transform: scale(0);
-  }
-  90% {
-    opacity: 0.5;
-    transform: scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(1.5);
-  }
-}
-
-.toggles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 3;
-}
-
-.toggle {
-  position: absolute;
-  left: 20px;
-  width: 50px;
-  height: 50px;
-  line-height: 51px;
-  box-sizing: border-box;
-  text-align: center;
-  font-family: sans-serif;
-  font-size: 10px;
-  font-weight: bold;
-  background-color: rgba(255, 255, 255, 0.2);
-  color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.toggle:hover {
-  background-color: rgba(255, 255, 255, 0.25);
-}
-
-.toggle:active {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.toggle.active {
-  background-color: rgba(255, 255, 255, 0.4);
-}
-
-.splat-toggle {
-  top: 20px;
-}
-
-.back-row-toggle {
-  top: 90px;
-  line-height: 12px;
-  padding-top: 14px;
-}
-
-.single-toggle {
-  top: 160px;
-}
-
-body.single-toggle .drop {
-  display: none;
-}
-
-body.single-toggle .drop:nth-child(10) {
-  display: block;
-}
 </style>
 	   <script>
 	   var makeItRain = function() {
@@ -203,25 +97,6 @@ body.single-toggle .drop:nth-child(10) {
   $('.rain.front-row').append(drops);
   $('.rain.back-row').append(backDrops);
 }
-
-$('.splat-toggle.toggle').on('click', function() {
-  $('body').toggleClass('splat-toggle');
-  $('.splat-toggle.toggle').toggleClass('active');
-  makeItRain();
-});
-
-$('.back-row-toggle.toggle').on('click', function() {
-  $('body').toggleClass('back-row-toggle');
-  $('.back-row-toggle.toggle').toggleClass('active');
-  makeItRain();
-});
-
-$('.single-toggle.toggle').on('click', function() {
-  $('body').toggleClass('single-toggle');
-  $('.single-toggle.toggle').toggleClass('active');
-  makeItRain();
-});
-
 makeItRain();
 	   </script>
 </script>
@@ -234,7 +109,7 @@ makeItRain();
          document.title="reddaP - A weird place"
 document.body.style.backgroundImage="url(https://thumbs.gfycat.com/BreakableWhoppingBluewhale-max-1mb.gif)"
 
-document.body.style.backgroundColor="#0e0429"	     
+document.body.style.backgroundColor="#000000"	     
          // city = 1
 	 // sem var 😂
 document.querySelectorAll('img')[0].style.marginLeft="auto"
