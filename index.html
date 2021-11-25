@@ -1,6 +1,26 @@
 <!DOCTYPE html>
 <html>
    <body>
+	<div id="CounterVisitor">
+</div>
+	   <script>
+var n = localStorage.getItem('on_load_counter');
+
+if (n === null) {
+  n = 0;
+}
+n++;
+
+localStorage.setItem("on_load_counter", n);
+
+nums = n.toString().split('').map(Number);
+document.getElementById('CounterVisitor').innerHTML = '';
+for (var i of nums) {
+  document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">' + i + '</span>';
+}
+
+</script>
+	   
 <h1>Primeiro teste de HTML e CSS sem manipulação de JavaScript (ou quase). :)<h1>
 	
       <img src="https://i.imgur.com/M9JvL7y.gif" ="240" class="gato"></img>
