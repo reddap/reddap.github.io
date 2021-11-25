@@ -35,9 +35,9 @@ document.querySelectorAll('body')[0].style.userSelect="none"
 
 
 var script = document.createElement('script');
-    await script.type = 'text/javascript';
-    await script.src = 'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js';
-    await document.body.appendChild(script);
+    script.type = 'text/javascript';
+    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js';
+    document.body.appendChild(script);
 	      
 //https://stackoverflow.com/questions/19424317/move-the-background-image-on-mouse-over-single-parallax
 setTimeout(()=>{
