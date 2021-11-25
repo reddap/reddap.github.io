@@ -31,21 +31,7 @@ document.querySelectorAll('h1')[0].style.color="#ffffff"
 document.querySelectorAll('img')[0].style.filter="drop-shadow(5px 5px 5px #190b40)"
 document.querySelectorAll('img')[1].style.filter="drop-shadow(5px 5px 5px #ffffff)"
 document.querySelectorAll('body')[0].style.userSelect="none"
-         
-        incrementAndShowValue();
 
-function incrementAndShowValue() {
-  var value = getCookie("visitcounter") || 0;
-  var newValue = ("00000" + (Number(value) + 1)).slice(-6);
-  var container = document.getElementById("counterVisitor");
-  String(newValue).split("").forEach(function(item, index) {
-    container.children[index].innerHTML = item;
-  });
-  counter++;
-  setCookie("visitcounter", counter);
-} 
-	   //https://stackoverflow.com/questions/47428504/javascript-count-number-of-visitor-for-website   
-	      
       </script>
 
 
