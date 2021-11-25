@@ -33,22 +33,23 @@ document.querySelectorAll('img')[1].style.filter="drop-shadow(5px 5px 5px #fffff
 document.querySelectorAll('body')[0].style.userSelect="none"
 
 
-async function jquery(){
+
 var script = document.createElement('script');
     await script.type = 'text/javascript';
     await script.src = 'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js';
     await document.body.appendChild(script);
 	      
 //https://stackoverflow.com/questions/19424317/move-the-background-image-on-mouse-over-single-parallax
-
+setTimeout(()=>{
 $('body').mousemove(function(e){
     var amountMovedX = (e.pageX * -1 / 6);
     var amountMovedY = (e.pageY * -1 / 6);
     $(this).css('background-position', amountMovedX + 'px ' + amountMovedY + 'px');
-});      
+});
+},500)
 
-}
-jquery()
+
+
       </script>
 	
    <style>
