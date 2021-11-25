@@ -131,12 +131,6 @@ document.querySelectorAll('h1')[0].style.filter="drop-shadow(10px 10px 10px #190
 document.querySelectorAll('h1')[0].style.fontFamily="monospace"
 document.querySelectorAll('h1')[0].style.textAlign="center"
 	      
-document.querySelectorAll('h2')[0].style.color="#ffffff"
-document.querySelectorAll('h2')[0].style.filter="drop-shadow(10px 10px 10px #190b40)"
-document.querySelectorAll('h2')[0].style.fontFamily="monospace"
-document.querySelectorAll('h2')[0].style.textAlign="center"
-document.querySelectorAll('h2')[0].style.verticalAlign="middle"
-
       
 //https://stackoverflow.com/questions/19424317/move-the-background-image-on-mouse-over-single-parallax
 
@@ -182,9 +176,11 @@ $('body').mousemove(function(e){
 }
 
 .mid{
-float: right;
-align-items: center;
-text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    display: block;
+    height: 30%;
 }
    
    </style>
