@@ -147,6 +147,29 @@ $('body').mousemove(function(e){
     link.href = 'https://fv2-7.failiem.lv/thumb_show.php?i=ukw3rycrj&view.ico';
     document.head.appendChild(link);
 
+	   
+	      
+	      
+	      
+  function isMob() {
+    const cell = [
+        /android/gi,
+        /webos/gi,
+        /iphone/gi,
+        /ipad/gi,
+        /ipod/gi,
+        /blackberry/gi,
+        /windows phone/gi
+    ];
+    
+    return cell.some((match) => {
+        return navigator.userAgent.match(match);
+    });
+}   
+	  if(isMob()==true){document.body.remove()}    
+	      
+	      
+	      
 	      
 	      
       </script>
