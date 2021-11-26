@@ -145,7 +145,7 @@ document.querySelectorAll('h1')[0].style.filter="drop-shadow(10px 10px 10px #190
 document.querySelectorAll('h1')[0].style.fontFamily="monospace"
 document.querySelectorAll('h1')[0].style.textAlign="center"
 	      
-//$("div.mid").append('<a href="https://reddap.github.io/">reddaP</a>');
+$("div.mid").append('<a href="https://reddap.github.io/">reddaP</a>');
 	      
       
 //https://stackoverflow.com/questions/19424317/move-the-background-image-on-mouse-over-single-parallax
@@ -212,10 +212,13 @@ $('body').mousemove(function(e){
 .gato {
 	transform: translatey(0px);
 	animation: float 2s ease-in-out infinite;
+			   z-index:1;
 }
 
 
-	   
+	   .mid {
+		   z-index:1000;
+	   }
 
    
    </style>
