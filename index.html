@@ -287,8 +287,9 @@ document.body.appendChild(canvas);
 // Set canvas to the size of the viewable window.
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-
+	
 strike();
+	
 function strike () {
   let bolt = new Lightning(ctx, {
     startPoint: [canvas.width/2, 0],
@@ -323,10 +324,10 @@ function Lightning (ctx, options) {
   	this.options.startPoint[1] + Math.sin(radians)*this.options.length
   ];
   
-  ctx.shadowColor = "#FFF";
-  ctx.shadowBlur = 5;
-  ctx.shadowOffsetX = 0;
-  ctx.shadowOffsetY = 0;
+
+
+
+
   ctx.strokeStyle = '#FFF';
   ctx.lineWidth = 2;
   this.draw = (isChild) => {
@@ -371,25 +372,10 @@ function Lightning (ctx, options) {
     if (d < this.options.length) {
     	window.requestAnimationFrame(() => {this.draw();});
     } else {
-    	this.fade();
+
     }
   }
   
-  this.fade = function () {
-    ctx.shadowColor = '#000';
-    ctx.fillStyle = 'rgba(0, 0, 0, .05)';
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-    const color = ctx.getImageData(0, 0, 1, 1);
-    if (color.data[0] == 0 && color.data[3] > 240) {
-    ctx.fillStyle = 'rgba(0, 0, 0, 1)';
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    	return;
-    }
-    setTimeout(() => {this.fade();}, 50);
-  }
-}
-
 
 function rand(min, max) {
   return Math.random()*(max-min)+min;
@@ -413,7 +399,13 @@ form.addEventListener('submit', (e) => {
   
   strike();
 });
-
+	
+document.querySelectorAll('canvas')[0].style=`		   top: 40%;
+		   width: 100%;
+		   text-align: center;
+		   position: absolute;
+		   z-index:1000;
+		   font-size: 30px` 
 </script>
 	
    </body>
