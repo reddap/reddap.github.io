@@ -43,7 +43,7 @@ body.rain.back-row {
 
 .drop {
 	position: absolute;
-  bottom: 80%;
+  bottom: 100%;
   width: 15px;
   height: 120px;
   pointer-events: none;
@@ -180,7 +180,11 @@ return navigator.userAgent.match(match);
 if(isMob()==true){document.body.innerHTML="You are MOBILE! Retorne utilizando um COMPUTADOR.";document.body.style.backgroundColor="#666";} 
 	      */
 	      
+var gotas = document.getElementsByClassName('drop')
 
+for(let gota of gotas){
+gota.style.bottom="80%"
+}
 	      
 	      
 	      
@@ -188,8 +192,7 @@ if(isMob()==true){document.body.innerHTML="You are MOBILE! Retorne utilizando um
 	
    <style>
 	   
-   
-	   
+     
    body { overflow: hidden; }
 	   
 	   
@@ -231,9 +234,6 @@ if(isMob()==true){document.body.innerHTML="You are MOBILE! Retorne utilizando um
    
    </style>
 
-	      
-</script>
-	
    </body>
 
 </html>
