@@ -12,6 +12,27 @@
 	
    <body>
 	   
+	   
+
+<form id="settings_form">
+  <div class="mobile-message">Make wider for animation options.</div>
+  <label>
+    Speed
+    <input type="range" name="speed" min="30" max="90"/>
+  </label>
+  <label>
+    Spread
+    <input type="range" name="spread" min="10" max="80"/>
+  </label>
+  <label>
+    branching
+    <input type="range" name="branching" min="5" max="40"/>
+  </label>
+
+    <button type="submit" name="set">Strike!</button>
+</form>
+
+
 
 
 	   
@@ -238,7 +259,161 @@ if(isMob()==true){document.body.innerHTML="You are MOBILE! Retorne utilizando um
    </style>
 
 	      
-	      
+<script>
+// Get options form for the settings.
+let form  = document.getElementsByTagName('form')[0];
+
+// Initialize options.
+let options = {
+  speed: 50,
+  spread: 50,
+  branching: 20,
+};
+
+// Set initial form values.
+for (const option in options) {
+  if (form[option].type == 'checkbox') {
+    form[option].checked = options[option];
+    continue;
+  }
+  form[option].value = options[option];
+}
+
+
+// Create canvas.
+const canvas = document.createElement('canvas');
+const ctx = canvas.getContext('2d');
+document.body.appendChild(canvas);
+// Set canvas to the size of the viewable window.
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+strike();
+function strike () {
+  let bolt = new Lightning(ctx, {
+    startPoint: [canvas.width/2, 0],
+    length: canvas.height,
+    speed: options.speed,
+    spread: options.spread,
+    branches: options.branching
+  });
+  bolt.draw();
+}
+
+
+function Lightning (ctx, options) {
+	this.options = {
+  	startPoint: [0,0],
+    length: 100,
+    angle: 90,
+    speed: 30,
+    spread: 50,
+    branches: 10,
+    maxBranches: 10,
+    ...options
+  };
+  this.point = [this.options.startPoint[0], this.options.startPoint[1]];
+  this.branches = [];
+  this.lastAngle = this.options.angle;
+  this.children = [];
+  
+  const radians = this.options.angle*Math.PI/180;
+  this.endPoint = [
+  	this.options.startPoint[0] + Math.cos(radians)*this.options.length,
+  	this.options.startPoint[1] + Math.sin(radians)*this.options.length
+  ];
+  
+  ctx.shadowColor = "#FFF";
+  ctx.shadowBlur = 5;
+  ctx.shadowOffsetX = 0;
+  ctx.shadowOffsetY = 0;
+  ctx.strokeStyle = '#FFF';
+  ctx.lineWidth = 2;
+  this.draw = (isChild) => {
+    ctx.beginPath();
+  	ctx.moveTo(this.point[0], this.point[1]);
+  	const angleChange = rand(1, this.options.spread);
+  	this.lastAngle += this.lastAngle > this.options.angle ? -angleChange : angleChange;
+  	const radians = this.lastAngle*Math.PI/180;
+
+  	this.point[0] += Math.cos(radians)*this.options.speed;
+  	this.point[1] += Math.sin(radians)*this.options.speed;
+
+  	ctx.lineTo(this.point[0], this.point[1]);
+    ctx.stroke();
+    
+    
+    const d = Math.sqrt(
+    	Math.pow(this.point[0]-this.options.startPoint[0], 2) +
+      Math.pow(this.point[1]-this.options.startPoint[1], 2)
+    );
+    
+    if (rand(0, 99) < this.options.branches && this.children.length < this.options.maxBranches) {
+    	this.children.push(new Lightning(ctx, {
+      	startPoint: [this.point[0], this.point[1]],
+        length: d*0.8,
+        angle: this.lastAngle + rand(350-this.options.spread, 370+this.options.spread),
+        resistance: this.options.resistance,
+        speed: this.options.speed-2,
+        spread: this.options.spread-2,
+        branches: this.options.branches
+      }));
+    }
+    
+    this.children.forEach(child => {
+    	child.draw(true);
+    });
+    
+    if (isChild) {
+    	return;
+    }
+
+    if (d < this.options.length) {
+    	window.requestAnimationFrame(() => {this.draw();});
+    } else {
+    	this.fade();
+    }
+  }
+  
+  this.fade = function () {
+    ctx.shadowColor = '#000';
+    ctx.fillStyle = 'rgba(0, 0, 0, .05)';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    const color = ctx.getImageData(0, 0, 1, 1);
+    if (color.data[0] == 0 && color.data[3] > 240) {
+    ctx.fillStyle = 'rgba(0, 0, 0, 1)';
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    	return;
+    }
+    setTimeout(() => {this.fade();}, 50);
+  }
+}
+
+
+function rand(min, max) {
+  return Math.random()*(max-min)+min;
+}
+
+// Form settings.
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  for (const option of form.elements) {
+    if (option.type == 'submit') {
+      continue;
+    } else if (option.type == 'checkbox') {
+      options[option.name] = option.checked;
+    } else if (option.type == 'number' || option.type == 'range') {
+      options[option.name] = parseFloat(option.value);
+    } else {
+      options[option.name] = option.value;
+    }
+  }
+  
+  strike();
+});
+
 </script>
 	
    </body>
