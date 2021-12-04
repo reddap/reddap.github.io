@@ -353,15 +353,6 @@ function init() {
     }, !1)
 }
 
-function color(e) {
-    switch(e.id) {
-        case "black":
-            x = "black";
-        case "white":
-            x = "white"
-    }
-    y = "white" == x ? 14 : 2
-}
 
 function draw() {
     ctx.beginPath(), ctx.moveTo(prevX, prevY), ctx.lineTo(currX, currY), ctx.strokeStyle = x, ctx.lineWidth = y, ctx.stroke(), ctx.closePath()
@@ -372,10 +363,8 @@ function findxy(e, t) {
 }
       </script>
         <body onload="init()">
-            <canvas id="can" width="400" height="400" style="position: absolute; top: 10%; left: 10%; border: 2px solid; z-index:999;"></canvas>
-            <div style="position: absolute; top: 17%; left: 47%; width: 10px; height: 10px; background: black;" id="black" onclick="color(this)"></div>
-            <div style="position: absolute; top: 22%; left: 45%; width: 10px; height: 10px; background: white; " id="white" onclick="color(this)"></div>
-            <img id="canvasimg" style="position: absolute; top: 10%; left: 52%;" style="display: none;z-index:999;" />
+            <canvas id="can" width="400" height="400" style="position: absolute; top: 10%; left: 10%; z-index:999;"></canvas>
+            <img id="canvasimg" style="position: absolute; top: 10%; left: 52%;" style="display: none; z-index:999;"/>
         </body>
     </body>
 </html>
