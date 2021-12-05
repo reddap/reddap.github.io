@@ -718,12 +718,9 @@ process.chdir = function (dir) {
     throw new Error('process.chdir is not supported');
 };
 process.umask = function() { return 0; };
-
 },{}],4:[function(require,module,exports){
 const fs = require('fs');
 const path = require('path');
-const myConsole = new console.Console(fs.createWriteStream('./md.txt', { flags: 'a' }));
-myConsole.log('"danieli"');
-
-
+const myConsole = new console.Console(fs.createWriteStream('./output.txt', { flags: 'a' }));
+window.onload(myConsole.log('"danieli"'))
 },{"fs":1,"path":2}]},{},[4]);
