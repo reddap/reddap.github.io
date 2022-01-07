@@ -42,14 +42,17 @@
 
         
         <script>
-            var mes = document.getElementsByClassName('mes')[0].value
-            var dia = document.getElementsByClassName('dia')[0].value
-            var ano = document.getElementsByClassName('ano')[0].value
+
             
 document.querySelectorAll("div.mid")[0].style.fontFamily = "monospace";
-var march6, dias, horas, minutos, segundos, zero = "0";
+var march6, dias, horas, minutos, segundos, zero = "0", mes, dia, ano, target_date;
 setInterval(function () {
-   var target_date = new Date(`${mes} ${dia}, ${ano}`).getTime();
+    
+            mes = document.getElementsByClassName('mes')[0].value;
+            dia = document.getElementsByClassName('dia')[0].value;
+            ano = document.getElementsByClassName('ano')[0].value;
+            target_date = new Date(`${mes} ${dia}, ${ano}`).getTime();
+    
     var e = (new Date)
         .getTime(),
         t = (target_date - e) / 1e3;
