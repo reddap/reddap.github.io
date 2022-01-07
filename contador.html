@@ -5,43 +5,35 @@
     </head>
 
     <body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" type="text/javascript"></script>
-	    
-	  <div class="mid">
-<p id="march"></p>
-</div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" type="text/javascript"></script>
 
-<script>
+        <div class="mid">
+            <p id="march"></p>
+        </div>
+
+        <script>
 document.querySelectorAll("div.mid")[0].style.fontFamily = "monospace";
-var target_date = new Date("march 6, 2022").getTime();
-var march6, dias, horas, minutos, segundos;
+var march6, dias, horas, minutos, segundos, target_date = new Date("march 6, 2022")
+    .getTime();
 setInterval(function () {
-var current_date = new Date().getTime();
-var segundos_f = (target_date - current_date) / 1000;
-dias = parseInt(segundos_f / 86400);
-segundos_f = segundos_f % 86400;
-horas = parseInt(segundos_f / 3600);
-segundos_f = segundos_f % 3600;
-minutos = parseInt(segundos_f / 60);
-segundos = parseInt(segundos_f % 60);
-march6 = `${dias*24+horas}:${minutos}:${segundos}`
-document.getElementById('march').innerText=march6;
+    var e = (new Date)
+        .getTime(),
+        t = (target_date - e) / 1e3;
+    dias = parseInt(t / 86400), t %= 86400, horas = parseInt(t / 3600), t %= 3600, minutos = parseInt(t / 60), segundos = parseInt(t % 60), march6 = `${24*dias+horas}:${minutos}:${segundos}`, document.getElementById("march")
+        .innerText = march6
 }, 1000);
 
+        </script>
+        <style>
+            body {
+                background-image: url("https://giffiles.alphacoders.com/107/107600.gif");
+                background-size: cover;
+                height: 100vh;
+                padding: 0;
+                margin: 0;
+                overflow: hidden;
+            }
 
-	
-</script>
-	  <style>
-		  
-body {
-    background-image: url('https://giffiles.alphacoders.com/107/107600.gif');
-    background-size: cover;
-    height: 100vh;
-    padding:0;
-    margin:0;
-  overflow: hidden; 
-}
-		  
             .mid {
                 align-items: center;
                 justify-content: center;
@@ -51,14 +43,11 @@ body {
                 position: absolute;
                 z-index: 1000;
             }
-		  
-           #march {
-font-size: 100px;
-font-family: monospace;
-            }
-		  
-	    </style>  
-	    
-    </body>
 
+            #march {
+                font-size: 100px;
+                font-family: monospace;
+            }
+        </style>
+    </body>
 </html>
