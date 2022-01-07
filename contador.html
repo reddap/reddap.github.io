@@ -67,7 +67,7 @@
 <option value="2024">2024</option>
 <option value="2025">2025</option>
 <option value="2026">2026</option>
-    
+    <button id="hidden">Click to Hide Selection</button>
 </select>
             </div>
             <p id="march"></p>
@@ -76,7 +76,9 @@
 
         
         <script>
-
+document.getElementById('hidden').addEventListener('click', ()=>{
+document.getElementById('hidden').style.display="none;"
+})
             
 document.querySelectorAll("div.mid")[0].style.fontFamily = "monospace";
 var march6, dias, horas, minutos, segundos, zero = "0", mes, dia, ano, target_date;
