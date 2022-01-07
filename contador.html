@@ -7,98 +7,103 @@
     <body>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" type="text/javascript"></script>
 
-        
-        
         <div class="mid">
             <div class"submid">
-<select name="mes" class="mes">
-<option value="january">january</option>
-<option value="febuary">febuary</option>
-<option value="march" selected>march</option>
-<option value="april">april</option>
-<option value="may">may</option>
-<option value="june">june</option>
-<option value="july">july</option>
-<option value="august">august</option>
-<option value="september">september</option>
-<option value="october">october</option>
-<option value="november">november</option>
-<option value="december">december</option>
-    
-</select>
-            
-<select name="dia" class="dia">
-<option value="1">1</option>
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
-<option value="5">5</option>
-<option value="6" selected >6</option>
-<option value="7">7</option>
-<option value="8">8</option>
-<option value="9">9</option>
-<option value="10">10</option>
-<option value="11">11</option>
-<option value="12">12</option>
-<option value="13">13</option>
-<option value="14">14</option>
-<option value="15">15</option>
-<option value="16">16</option>
-<option value="17">17</option>
-<option value="18">18</option>
-<option value="19">19</option>
-<option value="20">20</option>
-<option value="21">21</option>
-<option value="22">22</option>
-<option value="23">23</option>
-<option value="24">24</option>
-<option value="25">25</option>
-<option value="26">26</option>
-<option value="27">27</option>
-<option value="28">28</option>
-<option value="29">29</option>
-<option value="30">30</option>
-<option value="31">31</option>
+            <select name="mes" class="mes">
+                <option value="january">january</option>
+                <option value="febuary">febuary</option>
+                <option value="march" selected>march</option>
+                <option value="april">april</option>
+                <option value="may">may</option>
+                <option value="june">june</option>
+                <option value="july">july</option>
+                <option value="august">august</option>
+                <option value="september">september</option>
+                <option value="october">october</option>
+                <option value="november">november</option>
+                <option value="december">december</option>
             </select>
 
-<select name="ano" class="ano">
-<option value="2022" selected >2022</option>
-<option value="2023">2023</option>
-<option value="2024">2024</option>
-<option value="2025">2025</option>
-<option value="2026">2026</option>
-</select>
-                
-<button id="hidden">Click to Hide Selection</button>
-                
-            </div>
-            <p id="march"></p>
+            <select name="dia" class="dia">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6" selected>6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>
+
+            <select name="ano" class="ano">
+                <option value="2022" selected>2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+            </select>
+
+            <button id="hidden">Click to Hide Selection</button>
         </div>
-        
+        </div>
+        <p id="march"></p>
 
-        
         <script>
-document.getElementById('hidden').addEventListener("click", function(){
-document.querySelector('body > div > div').style.display="none"
-})
-            
-document.querySelectorAll("div.mid")[0].style.fontFamily = "monospace";
-var march6, dias, horas, minutos, segundos, zero = "0", mes, dia, ano, target_date;
-setInterval(function () {
-    
-            mes = document.getElementsByClassName('mes')[0].value;
-            dia = document.getElementsByClassName('dia')[0].value;
-            ano = document.getElementsByClassName('ano')[0].value;
-            target_date = new Date(`${mes} ${dia}, ${ano}`).getTime();
-    
-    var e = (new Date)
-        .getTime(),
-        t = (target_date - e) / 1e3;
-    dias = parseInt(t / 86400), t %= 86400, horas = parseInt(t / 3600), t %= 3600, minutos = parseInt(t / 60), segundos = parseInt(t % 60),
-        march6 = 24*dias+horas +":"+ (zero+minutos).slice(-2) +":"+ (zero+segundos).slice(-2), document.getElementById("march")
-        .innerText = march6
-}, 1000);
+            document.getElementById("hidden").addEventListener("click", function () {
+                document.querySelector("body > div > div").style.display = "none";
+            });
 
+            document.querySelectorAll("div.mid")[0].style.fontFamily = "monospace";
+            var march6,
+                dias,
+                horas,
+                minutos,
+                segundos,
+                zero = "0",
+                mes,
+                dia,
+                ano,
+                target_date;
+            setInterval(function () {
+                mes = document.getElementsByClassName("mes")[0].value;
+                dia = document.getElementsByClassName("dia")[0].value;
+                ano = document.getElementsByClassName("ano")[0].value;
+                target_date = new Date(`${mes} ${dia}, ${ano}`).getTime();
+
+                var e = new Date().getTime(),
+                    t = (target_date - e) / 1e3;
+                (dias = parseInt(t / 86400)),
+                    (t %= 86400),
+                    (horas = parseInt(t / 3600)),
+                    (t %= 3600),
+                    (minutos = parseInt(t / 60)),
+                    (segundos = parseInt(t % 60)),
+                    (march6 = 24 * dias + horas + ":" + (zero + minutos).slice(-2) + ":" + (zero + segundos).slice(-2)),
+                    (document.getElementById("march").innerText = march6);
+            }, 1000);
         </script>
         <style>
             body {
