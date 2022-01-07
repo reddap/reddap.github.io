@@ -5,7 +5,11 @@
     </head>
 
     <body>
+	    
+	  <div class="mid"></div>
+	    
 <script>
+document.querySelectorAll("div.mid")[0].style.fontFamily = "monospace";
 var target_date = new Date("march 6, 2022").getTime();
 var march6, dias, horas, minutos, segundos;
 var regressiva = document.getElementById("regressiva");
@@ -19,9 +23,20 @@ segundos_f = segundos_f % 3600;
 minutos = parseInt(segundos_f / 60);
 segundos = parseInt(segundos_f % 60);
 march6 = dias*24+horas, minutos, segundos;
-}, 1000);	
-  document.body.innerText=march6
-	    </script>
+}, 1000);
+</script>
+	  <style>
+            .mid {
+                align-items: center;
+                justify-content: center;
+                display: grid;
+                top: 40%;
+                width: 100%;
+                position: absolute;
+                z-index: 1000;
+            }
+	    </style>  
+	    
     </body>
 
 </html>
