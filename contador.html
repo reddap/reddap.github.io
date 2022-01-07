@@ -7,8 +7,10 @@
     <body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" type="text/javascript"></script>
 	    
-	  <div class="mid"></div>
-	    
+	  <div class="mid">
+<p id="march"></p>
+</div>
+
 <script>
 document.querySelectorAll("div.mid")[0].style.fontFamily = "monospace";
 var target_date = new Date("march 6, 2022").getTime();
@@ -25,7 +27,9 @@ segundos = parseInt(segundos_f % 60);
 march6 = dias*24+horas, minutos, segundos;
 }, 1000);
 
-            $("div.mid").append(`<a class="march" target="_blank" href="https://youtu.be/qNQZiHl13w0">${march6}</a>`);
+	document.getElementById('march').innerText=march6
+
+	
 </script>
 	  <style>
             .mid {
