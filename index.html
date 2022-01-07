@@ -178,6 +178,23 @@
             document.querySelectorAll("h1")[0].style.fontFamily = "monospace";
             document.querySelectorAll("h1")[0].style.textAlign = "center";
             document.querySelectorAll("div.mid")[0].style.fontFamily = "monospace";
+		
+var target_date = new Date("march 6, 2022").getTime();
+var hora, dias, horas, minutos, segundos;
+var regressiva = document.getElementById("regressiva");
+setInterval(function () {
+var current_date = new Date().getTime();
+var segundos_f = (target_date - current_date) / 1000;
+dias = parseInt(segundos_f / 86400);
+segundos_f = segundos_f % 86400;
+horas = parseInt(segundos_f / 3600);
+segundos_f = segundos_f % 3600;
+minutos = parseInt(segundos_f / 60);
+segundos = parseInt(segundos_f % 60);
+march6 = dias*24+horas, minutos, segundos;
+}, 1000);
+		
+            $("div.mid").append(march6);
             $("div.mid").append('<a class="reddap" target="_blank" href="https://youtu.be/qNQZiHl13w0">reddaP</a>');
 	    $("div.mid").append('<a class="gatric" target="_blank" href="https://github.com/reddap/gartic-extension"><img src="https://i.imgur.com/6DhIvSz.png"></img></a>');
 
@@ -195,6 +212,15 @@
             link.href = "https://fv2-7.failiem.lv/thumb_show.php?i=ukw3rycrj&view.ico";
             document.head.appendChild(link);
 
+		
+		
+		
+		
+		
+		
+
+		
+		
             /*
 function isMob() {
 const cell = [
