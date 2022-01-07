@@ -20,7 +20,7 @@ setInterval(function () {
         .getTime(),
         t = (target_date - e) / 1e3;
     dias = parseInt(t / 86400), t %= 86400, horas = parseInt(t / 3600), t %= 3600, minutos = parseInt(t / 60), segundos = parseInt(t % 60),
-        march6 = 24*dias+horas +":"+ (zero+minutos.slice(-2)) +":"+ (zero+segundos.slice(-2)), document.getElementById("march")
+        march6 = 24*dias+horas +":"+ (zero+minutos).slice(-2) +":"+ (zero+segundos).slice(-2), document.getElementById("march")
         .innerText = march6
 }, 1000);
 
