@@ -73,8 +73,26 @@
         </div>
         <p id="march">00:00:00</p>
             <p id="marchd">0 days 0 hours</p>
+            <p id="utcmenos3"></p>
 
         <script>
+
+setInterval(()=>{
+var hour, minute, date = new Date; date.getTime();
+hour= date.getHours(), minute = date.getMinutes();
+document.getElementById('utcmenos3').innerText=hour+":"+minute
+            
+
+if(hour<18){
+//document.body.backgroundImage="url()"
+document.body.style.backgroundColor="rgb(193 198 255)"
+}
+if(hour>18){
+//document.body.backgroundImage="url()"
+document.body.style.backgroundColor="rgb(1 3 23)"
+}            
+},1000)
+
             document.getElementById("hidden").addEventListener("click", function () {
                 document.querySelector("body > div > div").style.display = "none";
             });
