@@ -83,13 +83,28 @@ hour= date.getHours(), minute = date.getMinutes();
 document.getElementById('utcmenos3').innerText=hour+":"+minute
             
 
-if(hour<18){
+     // dia
+if(hour<18||hour>=6){
+    
 //document.body.backgroundImage="url()"
-document.body.style.backgroundColor="rgb(193 198 255)"
+document.body.style.backgroundColor="rgb(0 0 0)"
+    
+document.querySelector('#march').style.color="black"
+document.querySelector('#marchd').style.color="black"
+document.querySelector('#march').style.filter="drop-shadow(2px 2px 29px #000000)"
+document.querySelector('#marchd').style.filter="drop-shadow(2px 2px 29px #000000)"
 }
-if(hour>18){
+    
+    // noite
+if(hour>=18||hour<6){
+    
 //document.body.backgroundImage="url()"
-document.body.style.backgroundColor="rgb(1 3 23)"
+document.body.style.backgroundColor="rgb(1 3 23)" 
+    
+document.querySelector('#march').style.color="aquamarine"
+document.querySelector('#marchd').style.color="aquamarine"
+document.querySelector('#march').style.filter="drop-shadow(2px 2px 29px #ffffff)"
+document.querySelector('#marchd').style.filter="drop-shadow(2px 2px 29px #ffffff)"
 }            
 },1000)
 
@@ -148,7 +163,6 @@ document.body.style.backgroundColor="rgb(1 3 23)"
                 font-family: monospace;
                 margin-left: auto;
                 margin-right: auto;
-                filter: drop-shadow(5px 5px 5px #ffffff);
             }
 
             #marchd {
@@ -157,7 +171,6 @@ document.body.style.backgroundColor="rgb(1 3 23)"
                 opacity: 0.5;
                 margin-left: auto;
                 margin-right: auto;
-                filter: drop-shadow( 5px 5px 5px #ffffff);
             }
             
            .submid {
