@@ -69,6 +69,7 @@
             <button id="hidden">Click to Hide Selection</button>
         </div>
         <p id="march"></p>
+            <p id="marchd"></p>
 
         <script>
             document.getElementById("hidden").addEventListener("click", function () {
@@ -101,7 +102,9 @@
                     (minutos = parseInt(t / 60)),
                     (segundos = parseInt(t % 60)),
                     (march6 = 24 * dias + horas + ":" + (zero + minutos).slice(-2) + ":" + (zero + segundos).slice(-2)),
-                    (document.getElementById("march").innerText = march6);
+                    (document.getElementById("march").innerText = march6),
+                    (march6d = dias +" days"+ (zero + horas).slice(-2)+ " hours"),
+                    (document.getElementById("marchd").innerText = march6d);
             }, 1000);
         </script>
         <style>
@@ -122,6 +125,12 @@
             #march {
                 font-size: 100px;
                 font-family: monospace;
+            }
+
+            #march {
+                font-size: 50px;
+                font-family: monospace;
+                opacity: 0.5;
             }
         </style>
     </body>
