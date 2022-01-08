@@ -80,32 +80,7 @@
 setInterval(()=>{
 var hour, minute, date = new Date; date.getTime();
 hour = date.getHours(), minute = date.getMinutes();
-document.getElementById('utcmenos3').innerText=hour+":"+minute
-            
-
-     // dia
-if(hour<18||hour>=6){
-    
-//document.body.backgroundImage="url()"
-document.body.style.backgroundColor="rgb(255 255 255)"
-    
-document.querySelector('#march').style.color="black"
-document.querySelector('#marchd').style.color="black"
-document.querySelector('#march').style.filter="drop-shadow(2px 2px 20px #000000)"
-document.querySelector('#marchd').style.filter="drop-shadow(2px 2px 20px #000000)"
-}
-    
-    // noite
-if(hour>=18||hour<6){
-    
-//document.body.backgroundImage="url()"
-document.body.style.backgroundColor="rgb(1 3 23)" 
-    
-document.querySelector('#march').style.color="aquamarine"
-document.querySelector('#marchd').style.color="aquamarine"
-document.querySelector('#march').style.filter="drop-shadow(2px 2px 29px #ffffff)"
-document.querySelector('#marchd').style.filter="drop-shadow(2px 2px 29px #ffffff)"
-}            
+  
 },1000)
 
             document.getElementById("hidden").addEventListener("click", function () {
