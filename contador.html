@@ -69,6 +69,10 @@
             </select>
 <p>
             <button id="hidden">Click to Hide Selection</button>
+    
+<input type="checkbox" id="background" name="background">
+  <label for="background">random background images</label>
+    
                 </p>
         </div>
         <p id="march">00:00:00</p>
@@ -80,7 +84,7 @@
 setInterval(()=>{
 var hour, minute, date = new Date; date.getTime();
 hour = date.getHours(), minute = date.getMinutes();
-  
+ document.getElementById('utcmenos3').innerText=hour
 },1000)
 
             document.getElementById("hidden").addEventListener("click", function () {
