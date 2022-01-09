@@ -80,12 +80,53 @@
             <p id="utcmenos3"></p>
 
         <script>
-
+      
+            
+            
 setInterval(()=>{
+
+   
+        if(document.getElementById('background').checked == false){
+document.body.style.backgroundImage="url()"
+}
+    
 var hour, minute, date = new Date; date.getTime();
 hour = date.getHours(), minute = date.getMinutes();
- document.getElementById('utcmenos3').innerText=hour
+ document.getElementById('utcmenos3').innerText=("0"+hour).slice(-2) +":"+("0"+minute).slice(-2)
 },1000)
+            var arraybg = [
+"https://images.hdqwalls.com/wallpapers/lion-roaring-on-top-of-mountain-5k-k7.jpg",
+"https://images.hdqwalls.com/wallpapers/anime-child-fantasy-art-4k-xo.jpg",
+"https://images.hdqwalls.com/download/anime-girls-joy-time-on-bike-5k-q5-1280x800.jpg",
+"https://images.hdqwalls.com/download/mother-and-baby-reindeer-illustration-vc-1336x768.jpg",
+"https://images.hdqwalls.com/download/red-deer-fog-mist-4k-m3-1336x768.jpg",
+"https://images.hdqwalls.com/download/reinnder-forest-foggy-morning-5k-o0-1336x768.jpg",
+"https://images.hdqwalls.com/wallpapers/wolves-night-forest-silhouette-4k-5z.jpg",
+"https://images.hdqwalls.com/wallpapers/battlefield-in-forest-pc.jpg",
+"https://images.hdqwalls.com/download/anime-girl-flowers-do-1280x800.jpg",
+"https://images.hdqwalls.com/download/anime-love-digital-art-image-1280x800.jpg",
+"https://images.hdqwalls.com/download/chilly-winds-9s-1280x800.jpg",
+"https://images.hdqwalls.com/download/anime-landscape-scenery-birds-flying-artwork-4k-b6-1280x800.jpg",
+"https://images.hdqwalls.com/download/sitting-with-dog-on-bench-looking-at-sunset-e6-1280x800.jpg",
+"https://images.hdqwalls.com/download/anime-girl-chilling-at-balcony-4k-de-1360x768.jpg",
+"https://images.hdqwalls.com/download/blooming-hope-mk-1280x800.jpg",
+"https://images.hdqwalls.com/download/reindeer-digital-art-4k-lf-1336x768.jpg",
+"https://images.hdqwalls.com/wallpapers/dragons-the-guardian-do.jpg",
+"https://images.hdqwalls.com/download/anime-original-girl-nv-1280x800.jpg",
+"https://images.hdqwalls.com/download/adventure-of-children-8e-1600x900.jpg",
+"https://images.hdqwalls.com/download/cats-like-the-night-ab-1440x900.jpg",
+"https://images.hdqwalls.com/download/cats-evening-meetup-synthwave-5k-pb-1440x900.jpg",
+"https://images.hdqwalls.com/download/teenage-dreams-vaporwave-4k-fp-1440x900.jpg",
+"https://images.hdqwalls.com/download/lake-path-anime-girl-4k-gx-1360x768.jpg"
+]
+            
+document.getElementById('utcmenos3').addEventListener('change', ()=>{
+if(document.getElementById('background').checked == true){
+document.body.style.backgroundImage="url(arraybg[Math.floor(Math.random() * (arraybg.length- 0) + 0)])"
+}
+                
+})
+            
 
             document.getElementById("hidden").addEventListener("click", function () {
                 document.querySelector("body > div > div").style.display = "none";
@@ -122,6 +163,10 @@ hour = date.getHours(), minute = date.getMinutes();
                     (document.getElementById("marchd").innerText = march6d),
                     (document.getElementById('march').title = march6);
             }, 1000);
+            
+
+            
+            
         </script>
         <style>
             body {
