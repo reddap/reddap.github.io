@@ -69,20 +69,13 @@
         <p id="marchd">0 days 0 hours</p>
         <p id="utcmenos3"></p>
         <script>
-            setInterval(() => {
-                var hour,
-                    minute,
-                    date = new Date();
-                date.getTime();
-                (hour = date.getHours()), (minute = date.getMinutes());
-                document.getElementById("utcmenos3").innerText = ("0"+hour).slice(-2)+":"+("0"+minute).slice(-2);
-            }, 1000);
+
 
             document.getElementById("hidden").addEventListener("click", function () {
                 document.querySelector("body > div > div").style.display = "none";
             });
             document.querySelectorAll("div.mid")[0].style.fontFamily = "monospace";
-            var march6,
+            var march6, hour, minute, date,
                 dias,
                 horas,
                 minutos,
@@ -110,6 +103,12 @@
                     (march6d = dias + " days " + (zero + horas).slice(-2) + " hours"),
                     (document.getElementById("marchd").innerText = march6d),
                     (document.getElementById("march").title = march6);
+                
+                date = new Date();
+                date.getTime();
+                (hour = date.getHours()), (minute = date.getMinutes());
+                document.getElementById("utcmenos3").innerText = ("0"+hour).slice(-2)+":"+("0"+minute).slice(-2) +`\n ${(dias*7).charAt(0)} weeks`;
+                
             }, 1000);
         </script>
         <style>
@@ -147,7 +146,7 @@
             }
 
             #utcmenos3 {
-                font-size: 10px;
+                font-size: 30px;
                 font-family: monospace;
                 opacity: 0.5;
                 margin-left: auto;
