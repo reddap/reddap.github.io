@@ -84,10 +84,9 @@
             
 document.body.style.backgroundSize="cover"
 document.body.style.backgroundRepeat="no-repeat"
+document.body.style.backgroundPosition="center"
             
 setInterval(()=>{
-
-   
 if(document.getElementById('background').checked == false){
 document.body.style.backgroundImage="url()"
 }
@@ -122,27 +121,6 @@ hour = date.getHours(), minute = date.getMinutes();
 "https://images.hdqwalls.com/download/lake-path-anime-girl-4k-gx-1360x768.jpg"
 ]
             
-//preload
-            
-function preloadImages(array) {
-    if (!preloadImages.list) {
-        preloadImages.list = [];
-    }
-    var list = preloadImages.list;
-    for (var i = 0; i < array.length; i++) {
-        var img = new Image();
-        img.onload = function() {
-            var index = list.indexOf(this);
-            if (index !== -1) {
-                list.splice(index, 1);
-            }
-        }
-        list.push(img);
-        img.src = array[i];
-    }
-}
-
-preloadImages(arraybg);
             
             
 document.getElementById('background').addEventListener('click', function(){
@@ -150,7 +128,7 @@ document.getElementById('background').addEventListener('click', function(){
 if(document.getElementById('background').checked == false){
 document.body.style.backgroundImage="url()"
 }
-document.body.style.backgroundImage=`url(${arraybg[Math.floor(Math.random() * (2 - 0) + 0)]})`
+document.body.style.backgroundImage=`url(${arraybg[Math.floor(Math.random() * (arraybg.length - 0) + 0)]})`
 })
     
 document.getElementById('utcmenos3').addEventListener('change', function(){
@@ -202,8 +180,11 @@ document.body.style.backgroundImage=`url(${arraybg[Math.floor(Math.random() * (a
             
         </script>
         <style>
-            body {
+            body, html {
                 overflow: hidden;
+                height: 100%;
+                margin: 0;
+}
             }
 
             .mid {
