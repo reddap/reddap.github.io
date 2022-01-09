@@ -122,7 +122,7 @@ hour = date.getHours(), minute = date.getMinutes();
             
 document.getElementById('utcmenos3').addEventListener('change', ()=>{
 if(document.getElementById('background').checked == true){
-document.body.style.backgroundImage="url(arraybg[Math.floor(Math.random() * (arraybg.length- 0) + 0)])"
+document.body.style.backgroundImage=`url(${arraybg[Math.floor(Math.random() * (arraybg.length- 0) + 0)]})` 
 }
                 
 })
