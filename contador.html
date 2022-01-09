@@ -3,14 +3,10 @@
     <head>
         <title>Contador</title>
     </head>
-
     <body>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" type="text/javascript"></script>
-
         <div class="mid">
-<div class"submid"="" style="
-    text-align: center;
-">
+            <div class"submid"="" style=" text-align: center; ">
             <select name="mes" class="mes">
                 <option value="january">january</option>
                 <option value="febuary">febuary</option>
@@ -25,7 +21,6 @@
                 <option value="november">november</option>
                 <option value="december">december</option>
             </select>
-
             <select name="dia" class="dia">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -59,7 +54,6 @@
                 <option value="30">30</option>
                 <option value="31">31</option>
             </select>
-
             <select name="ano" class="ano">
                 <option value="2022" selected>2022</option>
                 <option value="2023">2023</option>
@@ -67,82 +61,26 @@
                 <option value="2025">2025</option>
                 <option value="2026">2026</option>
             </select>
-<p>
-            <button id="hidden">Click to Hide Selection</button>
-    
-    
-                </p>
+            <p>
+                <button id="hidden">Click to Hide Selection</button>
+            </p>
         </div>
         <p id="march">00:00:00</p>
-            <p id="marchd">0 days 0 hours</p>
-            <p id="utcmenos3"></p>
-
+        <p id="marchd">0 days 0 hours</p>
+        <p id="utcmenos3"></p>
         <script>
-      
-   /*/
-document.body.style.backgroundSize="cover"
-document.body.style.backgroundRepeat="no-repeat"
-document.body.style.backgroundPosition="center"
-
-if(document.getElementById('background').checked == false){
-document.body.style.backgroundImage="url()"
-}
-   /*/
-            
-            setInterval(()=>{
-var hour, minute, date = new Date; date.getTime();
-hour = date.getHours(), minute = date.getMinutes();
- document.getElementById('utcmenos3').innerText=("0"+hour).slice(-2) +":"+("0"+minute).slice(-2)
-},1000)
-            
-            /*            var arraybg = [
-"https://images.hdqwalls.com/wallpapers/lion-roaring-on-top-of-mountain-5k-k7.jpg",
-"https://images.hdqwalls.com/wallpapers/anime-child-fantasy-art-4k-xo.jpg",
-"https://images.hdqwalls.com/download/anime-girls-joy-time-on-bike-5k-q5-1280x800.jpg",
-"https://images.hdqwalls.com/download/mother-and-baby-reindeer-illustration-vc-1336x768.jpg",
-"https://images.hdqwalls.com/download/red-deer-fog-mist-4k-m3-1336x768.jpg",
-"https://images.hdqwalls.com/download/reinnder-forest-foggy-morning-5k-o0-1336x768.jpg",
-"https://images.hdqwalls.com/wallpapers/wolves-night-forest-silhouette-4k-5z.jpg",
-"https://images.hdqwalls.com/wallpapers/battlefield-in-forest-pc.jpg",
-"https://images.hdqwalls.com/download/anime-girl-flowers-do-1280x800.jpg",
-"https://images.hdqwalls.com/download/anime-love-digital-art-image-1280x800.jpg",
-"https://images.hdqwalls.com/download/chilly-winds-9s-1280x800.jpg",
-"https://images.hdqwalls.com/download/anime-landscape-scenery-birds-flying-artwork-4k-b6-1280x800.jpg",
-"https://images.hdqwalls.com/download/sitting-with-dog-on-bench-looking-at-sunset-e6-1280x800.jpg",
-"https://images.hdqwalls.com/download/anime-girl-chilling-at-balcony-4k-de-1360x768.jpg",
-"https://images.hdqwalls.com/download/blooming-hope-mk-1280x800.jpg",
-"https://images.hdqwalls.com/download/reindeer-digital-art-4k-lf-1336x768.jpg",
-"https://images.hdqwalls.com/wallpapers/dragons-the-guardian-do.jpg",
-"https://images.hdqwalls.com/download/anime-original-girl-nv-1280x800.jpg",
-"https://images.hdqwalls.com/download/adventure-of-children-8e-1600x900.jpg",
-"https://images.hdqwalls.com/download/cats-like-the-night-ab-1440x900.jpg",
-"https://images.hdqwalls.com/download/cats-evening-meetup-synthwave-5k-pb-1440x900.jpg",
-"https://images.hdqwalls.com/download/teenage-dreams-vaporwave-4k-fp-1440x900.jpg",
-"https://images.hdqwalls.com/download/lake-path-anime-girl-4k-gx-1360x768.jpg"
-]
-            
-            
-            
-document.getElementById('background').addEventListener('click', function(){
-    
-if(document.getElementById('background').checked == false){
-document.body.style.backgroundImage="url()"
-}
-document.body.style.backgroundImage=`url(${arraybg[Math.floor(Math.random() * (arraybg.length - 0) + 0)]})`
-})
-    
-document.getElementById('utcmenos3').addEventListener('change', function(){
-if(document.getElementById('background').checked == true){
-document.body.style.backgroundImage=`url(${arraybg[Math.floor(Math.random() * (arraybg.length - 0) + 0)]})`
-}
-                
-})
-        */    
+            setInterval(() => {
+                var hour,
+                    minute,
+                    date = new Date();
+                date.getTime();
+                (hour = date.getHours()), (minute = date.getMinutes());
+                document.getElementById("utcmenos3").innerText = hour;
+            }, 1000);
 
             document.getElementById("hidden").addEventListener("click", function () {
                 document.querySelector("body > div > div").style.display = "none";
             });
-
             document.querySelectorAll("div.mid")[0].style.fontFamily = "monospace";
             var march6,
                 dias,
@@ -159,7 +97,6 @@ document.body.style.backgroundImage=`url(${arraybg[Math.floor(Math.random() * (a
                 dia = document.getElementsByClassName("dia")[0].value;
                 ano = document.getElementsByClassName("ano")[0].value;
                 target_date = new Date(`${mes} ${dia}, ${ano}`).getTime();
-
                 var e = new Date().getTime(),
                     t = (target_date - e) / 1e3;
                 (dias = parseInt(t / 86400)),
@@ -170,21 +107,15 @@ document.body.style.backgroundImage=`url(${arraybg[Math.floor(Math.random() * (a
                     (segundos = parseInt(t % 60)),
                     (march6 = 24 * dias + horas + ":" + (zero + minutos).slice(-2) + ":" + (zero + segundos).slice(-2)),
                     (document.getElementById("march").innerText = march6),
-                    (march6d = dias +" days "+ (zero + horas).slice(-2)+ " hours"),
+                    (march6d = dias + " days " + (zero + horas).slice(-2) + " hours"),
                     (document.getElementById("marchd").innerText = march6d),
-                    (document.getElementById('march').title = march6);
+                    (document.getElementById("march").title = march6);
             }, 1000);
-            
-
-            
-            
         </script>
         <style>
             body {
                 overflow: hidden;
-}
             }
-
             .mid {
                 align-items: center;
                 justify-content: center;
@@ -194,7 +125,6 @@ document.body.style.backgroundImage=`url(${arraybg[Math.floor(Math.random() * (a
                 position: absolute;
                 z-index: 1000;
             }
-
             #march {
                 font-size: 100px;
                 font-family: monospace;
@@ -202,21 +132,21 @@ document.body.style.backgroundImage=`url(${arraybg[Math.floor(Math.random() * (a
                 margin-right: auto;
                 position: relative;
             }
-            
-#march:after {
-    content: attr(title);
-    position: absolute;
-    bottom: -45%;
-    left: 0;
-    -moz-transform: scaleY(-1);
-    -o-transform: scaleY(-1);
-    /* -webkit-transform: scaleY(-1); */
-    transform: scaleY(-0.3);
-    background: -webkit-linear-gradient(#dccbcb26, #03152f21);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-            
+
+            #march:after {
+                content: attr(title);
+                position: absolute;
+                bottom: -45%;
+                left: 0;
+                -moz-transform: scaleY(-1);
+                -o-transform: scaleY(-1);
+                /* -webkit-transform: scaleY(-1); */
+                transform: scaleY(-0.3);
+                background: -webkit-linear-gradient(#dccbcb26, #03152f21);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
             #marchd {
                 font-size: 50px;
                 font-family: monospace;
@@ -225,8 +155,7 @@ document.body.style.backgroundImage=`url(${arraybg[Math.floor(Math.random() * (a
                 margin-right: auto;
                 position: relative;
             }
-            
-            
+
             #utcmenos3 {
                 font-size: 10px;
                 font-family: monospace;
@@ -234,17 +163,44 @@ document.body.style.backgroundImage=`url(${arraybg[Math.floor(Math.random() * (a
                 margin-left: auto;
                 margin-right: auto;
             }
-            
-           .submid {
+
+            .submid {
                 align-items: center;
                 justify-self: center;
                 display: grid;
             }
-            
 
-/* CSS https://getcssscan.com/css-buttons-examples */
-#hidden {background-color: #FFFFFF;border: 1px solid rgb(209,213,219);border-radius: .5rem;box-sizing: border-box;color: #111827;font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size: .875rem;font-weight: 600;line-height: 1.25rem;padding: .75rem 1rem;text-align: center;text-decoration: none #D1D5DB solid;text-decoration-thickness: auto;box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);cursor: pointer;user-select: none;-webkit-user-select: none;touch-action: manipulation;}#hidden:hover {background-color: rgb(249,250,251);}#hidden:focus {outline: 2px solid transparent;outline-offset: 2px;}#hidden:focus-visible {box-shadow: none;}
-            
+            /* CSS https://getcssscan.com/css-buttons-examples */
+            #hidden {
+                background-color: #ffffff;
+                border: 1px solid rgb(209, 213, 219);
+                border-radius: 0.5rem;
+                box-sizing: border-box;
+                color: #111827;
+                font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                font-size: 0.875rem;
+                font-weight: 600;
+                line-height: 1.25rem;
+                padding: 0.75rem 1rem;
+                text-align: center;
+                text-decoration: none #d1d5db solid;
+                text-decoration-thickness: auto;
+                box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+                cursor: pointer;
+                user-select: none;
+                -webkit-user-select: none;
+                touch-action: manipulation;
+            }
+            #hidden:hover {
+                background-color: rgb(249, 250, 251);
+            }
+            #hidden:focus {
+                outline: 2px solid transparent;
+                outline-offset: 2px;
+            }
+            #hidden:focus-visible {
+                box-shadow: none;
+            }
         </style>
     </body>
 </html>
