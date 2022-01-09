@@ -119,10 +119,10 @@ hour = date.getHours(), minute = date.getMinutes();
 "https://images.hdqwalls.com/download/teenage-dreams-vaporwave-4k-fp-1440x900.jpg",
 "https://images.hdqwalls.com/download/lake-path-anime-girl-4k-gx-1360x768.jpg"
 ]
-            
-document.getElementById('utcmenos3').addEventListener('change', ()=>{
+
+minute.addEventListener('change', function(){
 if(document.getElementById('background').checked == true){
-document.body.style.backgroundImage=`url(${arraybg[Math.floor(Math.random() * (arraybg.length- 0) + 0)]})` 
+document.body.style.backgroundImage=`url(${arraybg[Math.floor(Math.random() * (arraybg.length- 0) + 0)]})`
 }
                 
 })
