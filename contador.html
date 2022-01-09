@@ -75,7 +75,7 @@
                     date = new Date();
                 date.getTime();
                 (hour = date.getHours()), (minute = date.getMinutes());
-                document.getElementById("utcmenos3").innerText = hour+":"+minute;
+                document.getElementById("utcmenos3").innerText = ("0"+hour).slice(-2)+":"+("0"+minute).slice(-2);
             }, 1000);
 
             document.getElementById("hidden").addEventListener("click", function () {
