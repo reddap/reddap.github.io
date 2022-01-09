@@ -107,7 +107,7 @@
                 date = new Date();
                 date.getTime();
                 (hour = date.getHours()), (minute = date.getMinutes());
-                document.getElementById("utcmenos3").innerText = `${(dias/7).toString().charAt(0)} weeks\n`+("0"+hour).slice(-2)+":"+("0"+minute).slice(-2);
+                document.getElementById("utcmenos3").innerText = ("0"+hour).slice(-2)+":"+("0"+minute).slice(-2);
                 
             }, 1000);
         </script>
@@ -136,6 +136,7 @@
             }
             
  #march:after {content: attr(title);position: absolute;bottom: -45%;left: 0;-moz-transform: scaleY(-1);-o-transform: scaleY(-1);transform: scaleY(-0.3);background: -webkit-linear-gradient(#dccbcb26, #03152f21);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
+           
             #marchd {
                 font-size: 50px;
                 font-family: monospace;
@@ -144,7 +145,8 @@
                 margin-right: auto;
                 position: relative;
             }
-
+ #marchd:after {content: attr(title);position: absolute;bottom: -45%;left: 0;-moz-transform: scaleY(-1);-o-transform: scaleY(-1);transform: scaleY(-0.3);background: -webkit-linear-gradient(#dccbcb26, #03152f21);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
+            
             #utcmenos3 {
                 font-size: 20px;
                 font-family: monospace;
