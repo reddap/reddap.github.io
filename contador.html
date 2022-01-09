@@ -115,7 +115,8 @@ hour = date.getHours(), minute = date.getMinutes();
                     (march6 = 24 * dias + horas + ":" + (zero + minutos).slice(-2) + ":" + (zero + segundos).slice(-2)),
                     (document.getElementById("march").innerText = march6),
                     (march6d = dias +" days "+ (zero + horas).slice(-2)+ " hours"),
-                    (document.getElementById("marchd").innerText = march6d);
+                    (document.getElementById("marchd").innerText = march6d),
+                    (document.getElementById('march').title = march6);
             }, 1000);
         </script>
         <style>
@@ -139,7 +140,9 @@ hour = date.getHours(), minute = date.getMinutes();
                 margin-left: auto;
                 margin-right: auto;
             }
-
+            
+#march:after {content: attr(title);position: absolute;bottom: -70%;left: 0;-moz-transform: scaleY(-1);-o-transform: scaleY(-1);-webkit-transform: scaleY(-1);transform: scaleY(-1);background: -webkit-linear-gradient(#FFF, #AAA);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
+            
             #marchd {
                 font-size: 50px;
                 font-family: monospace;
