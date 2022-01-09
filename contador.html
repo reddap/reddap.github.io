@@ -70,8 +70,6 @@
 <p>
             <button id="hidden">Click to Hide Selection</button>
     
-<input type="checkbox" id="background" name="background">
-  <label for="background">random background images</label>
     
                 </p>
         </div>
@@ -81,21 +79,23 @@
 
         <script>
       
-            
+   /*/
 document.body.style.backgroundSize="cover"
 document.body.style.backgroundRepeat="no-repeat"
 document.body.style.backgroundPosition="center"
-            
-setInterval(()=>{
+
 if(document.getElementById('background').checked == false){
 document.body.style.backgroundImage="url()"
 }
-    
+   /*/
+            
+            setInterval(()=>{
 var hour, minute, date = new Date; date.getTime();
 hour = date.getHours(), minute = date.getMinutes();
  document.getElementById('utcmenos3').innerText=("0"+hour).slice(-2) +":"+("0"+minute).slice(-2)
 },1000)
-            var arraybg = [
+            
+            /*            var arraybg = [
 "https://images.hdqwalls.com/wallpapers/lion-roaring-on-top-of-mountain-5k-k7.jpg",
 "https://images.hdqwalls.com/wallpapers/anime-child-fantasy-art-4k-xo.jpg",
 "https://images.hdqwalls.com/download/anime-girls-joy-time-on-bike-5k-q5-1280x800.jpg",
@@ -137,7 +137,7 @@ document.body.style.backgroundImage=`url(${arraybg[Math.floor(Math.random() * (a
 }
                 
 })
-            
+        */    
 
             document.getElementById("hidden").addEventListener("click", function () {
                 document.querySelector("body > div > div").style.display = "none";
@@ -180,10 +180,8 @@ document.body.style.backgroundImage=`url(${arraybg[Math.floor(Math.random() * (a
             
         </script>
         <style>
-            body, html {
+            body {
                 overflow: hidden;
-                height: 100%;
-                margin: 0;
 }
             }
 
